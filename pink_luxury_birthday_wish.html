@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffb7d5">
+<title>Pink Luxury Birthday Surprise 💗</title>
+<style>
+:root{--pink:#ff8fbd;--pink2:#ffd5e7;--rose:#d94f8d;--gold:#e9bd67;--cream:#fff9fc;--ink:#682b4c;--shadow:0 18px 45px #b63f7540}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Sinhala",sans-serif;background:radial-gradient(circle at 20% 10%,#fff 0 3%,transparent 22%),radial-gradient(circle at 90% 35%,#ffe7f1 0 5%,transparent 26%),linear-gradient(135deg,#fff5fa,#ffd5e7 48%,#fff8fc);overflow-x:hidden}
+button{font:inherit;cursor:pointer;border:0;touch-action:manipulation}
+button:focus-visible{outline:3px solid #8e2e60;outline-offset:3px}
+#sparkleLayer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.spark{position:absolute;animation:floatUp linear forwards;opacity:.9;will-change:transform}
+@keyframes floatUp{from{transform:translateY(10vh) rotate(0deg);opacity:0}10%{opacity:1}to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.confetti{position:fixed;top:-15px;width:8px;height:13px;z-index:20;pointer-events:none;animation:fall 3.4s linear forwards;border-radius:2px}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(900deg);opacity:.15}}
+.wrap{width:min(960px,100%);margin:auto;padding:18px 14px 45px;position:relative}
+.topline{text-align:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#a04470;margin:8px 0 16px}
+.hero{position:relative;text-align:center;padding:30px 18px 28px;border:1px solid #fff9;border-radius:30px;background:linear-gradient(145deg,#ffffffd9,#fff0f8d9);box-shadow:var(--shadow);overflow:hidden}
+.hero:before,.hero:after{content:"✦";position:absolute;color:#e7b75c;font-size:28px;animation:twinkle 2s infinite alternate}
+.hero:before{top:17px;left:22px}.hero:after{right:22px;bottom:20px;animation-delay:.7s}
+@keyframes twinkle{to{transform:scale(.65) rotate(40deg);opacity:.35}}
+.kicker{color:#ba5484;font-size:.9rem;font-weight:750;letter-spacing:.09em}
+h1{font-family:Georgia,serif;color:#b83f79;font-size:clamp(2.4rem,10vw,5.4rem);line-height:.98;margin:12px 0;text-shadow:0 3px #fff,0 8px 20px #d34d8d30}
+.subtitle{font-size:clamp(1rem,3.5vw,1.25rem);line-height:1.7;max-width:600px;margin:12px auto}
+.gold{color:#b77b22}
+.bear-stage{height:150px;display:flex;justify-content:center;align-items:center;gap:12px;margin:6px auto 14px}
+.bear{position:relative;width:100px;height:105px;animation:bob 2.4s ease-in-out infinite;filter:drop-shadow(0 8px 8px #a7466b25)}
+.bear:nth-child(2){animation-delay:.45s;transform:scale(.92)}
+.ear{position:absolute;width:35px;height:35px;top:2px;background:#b97860;border:4px solid #f7d7c8;border-radius:50%}
+.ear.left{left:6px}.ear.right{right:6px}
+.head{position:absolute;top:14px;left:9px;width:82px;height:76px;border-radius:48%;background:linear-gradient(140deg,#ffe0c7,#c58a70);border:4px solid #fff1e9}
+.muzzle{position:absolute;left:25px;top:42px;width:33px;height:24px;background:#fff0df;border-radius:50%}
+.eye{position:absolute;top:37px;width:6px;height:8px;background:#512b37;border-radius:50%}.eye.left{left:28px}.eye.right{right:28px}
+.nose{position:absolute;top:47px;left:43px;width:10px;height:7px;background:#713b48;border-radius:50%}
+.mouth{position:absolute;top:54px;left:43px;width:10px;height:6px;border-bottom:2px solid #713b48;border-radius:50%}
+.bow{position:absolute;right:3px;top:17px;color:#e94f91;font-size:27px;transform:rotate(18deg)}
+.heart-hold{position:absolute;bottom:-3px;left:37px;font-size:32px;animation:heartBeat 1.1s infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+@keyframes heartBeat{50%{transform:scale(1.22)}}
+.btn{border-radius:999px;padding:13px 20px;font-weight:800;box-shadow:0 8px 20px #bb47723b;transition:transform .18s,filter .18s}
+.btn:active{transform:scale(.97)}
+.btn-primary{color:white;background:linear-gradient(120deg,#e64d91,#b83f79);border:1px solid #ffd8e9}
+.btn-gold{background:linear-gradient(120deg,#ffe7a5,#dca648);color:#693d20}
+.btn-soft{background:#fff;color:#a63d70;border:1px solid #f5b8d2}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.section{margin-top:22px;padding:23px 18px;border:1px solid #fff9;border-radius:25px;background:#ffffffc9;box-shadow:0 12px 30px #b63f751b}
+.section h2{font-family:Georgia,serif;text-align:center;color:#b83f79;font-size:clamp(1.55rem,5vw,2.2rem);margin:0 0 12px}
+.card{max-width:700px;margin:auto;padding:20px;border-radius:20px;background:linear-gradient(145deg,#fff,#fff0f7);border:1px solid #f7c5dc;text-align:center;line-height:1.9}
+.hidden{display:none!important}
+.type-line{min-height:2em;font-weight:650}
+.gamebox{max-width:560px;margin:auto}
+.game-info{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-weight:800;margin:12px 0}
+#gameArea{height:330px;position:relative;overflow:hidden;border-radius:20px;border:2px solid #f5bad4;background:radial-gradient(circle at 50% 0%,#fff,#ffe1ef 65%,#ffd2e6);touch-action:pan-y}
+.game-heart{position:absolute;border:0;background:transparent;font-size:34px;padding:4px;line-height:1;filter:drop-shadow(0 4px 4px #b63f7533);animation:heartDrop linear forwards}
+@keyframes heartDrop{to{transform:translateY(360px) rotate(25deg);opacity:.35}}
+.game-note{text-align:center;font-size:.9rem}
+.final-heart{font-size:clamp(4rem,18vw,7rem);line-height:1;animation:heartBeat 1.2s infinite;filter:drop-shadow(0 8px 16px #e85a9838)}
+.secret{padding:18px;border:1px dashed #e4a1bf;border-radius:18px;background:#fff8fc;margin-top:12px}
+footer{text-align:center;padding:25px 12px;color:#9b5474;font-size:.85rem}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:50;background:#692947;color:#fff;padding:11px 17px;border-radius:99px;box-shadow:var(--shadow);font-size:.9rem;max-width:90vw;text-align:center}
+@media(min-width:700px){.hero{padding:42px 32px}.section{padding:30px}.bear-stage{height:170px}.bear{transform:scale(1.12)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="sparkleLayer" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="topline">A little box of love ✦ made just for you ✦</div>
+  <section class="hero" aria-labelledby="mainTitle">
+    <div class="kicker">✨ A VERY SPECIAL DAY ✨</div>
+    <h1 id="mainTitle">Happy Birthday,<br>Hachintha Nuraga! <span class="gold">🎂</span></h1>
+    <p class="subtitle">හචින්ත නුරාග, අද දවස ඔයාගේ හිනාව වගේම ලස්සන වෙන්න ඕනේ!<br><strong>May your day sparkle with love, laughter & little magical moments, Hachintha Nuraga. 💗</strong></p>
+    <div class="bear-stage" aria-label="Two cute animated teddy bears">
+      <div class="bear" role="img" aria-label="Teddy bear holding a heart"><div class="ear left"></div><div class="ear right"></div><div class="head"><div class="eye left"></div><div class="eye right"></div><div class="muzzle"></div><div class="nose"></div><div class="mouth"></div></div><div class="bow">🎀</div><div class="heart-hold">💗</div></div>
+      <div class="bear" role="img" aria-label="Teddy bear holding a heart"><div class="ear left"></div><div class="ear right"></div><div class="head"><div class="eye left"></div><div class="eye right"></div><div class="muzzle"></div><div class="nose"></div><div class="mouth"></div></div><div class="bow">🌸</div><div class="heart-hold">💝</div></div>
+    </div>
+    <p class="subtitle"><strong>හචින්ත නුරාග, ඔයාගේ දවස අද තවත් විශේෂ කරන්න පුංචි surprise එකක් තියෙනවා…</strong></p>
+    <div class="actions">
+      <button class="btn btn-primary" id="openSurprise">Open Your Surprise 🎁</button>
+      <button class="btn btn-gold" id="musicBtn" aria-pressed="false">♫ Play Birthday Music</button>
+    </div>
+    <p style="font-size:.78rem;opacity:.75;margin:13px 0 0">Music begins only when you tap the button.</p>
+  </section>
+
+  <section class="section hidden" id="wishSection">
+    <h2>💌 A Little Birthday Letter</h2>
+    <div class="card">
+      <div style="font-size:2rem">🌷💗🌷</div>
+      <p class="type-line" id="typedWish"></p>
+      <p>ඔයාගේ ජීවිතයට සතුට, ආදරය, සෞභාග්‍යය සහ ලස්සන මතක පිරී ඉතිරේවා!</p>
+      <p><em>May every new chapter bring you closer to your dreams. Keep shining, keep smiling, and never forget how special you are. ✨</em></p>
+      <div class="actions"><button class="btn btn-soft" id="letterBtn">Open one more message 💌</button></div>
+      <div id="extraMessage" class="secret hidden">🌸 <strong>පුංචි මතක් කිරීමක්:</strong> ඔයාගේ හිනාව වටිනවා. අද විතරක් නෙවෙයි, හැමදාම සතුටින් ඉන්න! <br><em>You deserve beautiful things, today and always. 💖</em></div>
+    </div>
+  </section>
+
+  <section class="section" id="gameSection">
+    <h2>🎮 Catch the Hearts!</h2>
+    <p class="game-note">හදවත් tap කරලා අල්ලගන්න! තත්පර 20ක් ඇතුළත points 10ක් ගන්න පුළුවන්ද? 💗</p>
+    <div class="gamebox">
+      <div class="game-info"><span>⭐ Score: <span id="score">0</span></span><span>⏱️ Time: <span id="time">20</span>s</span><span>🏆 Goal: 10</span></div>
+      <div id="gameArea" aria-label="Catch the falling hearts game area"><div id="gameHint" style="position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:25px;color:#a04470">Tap “Start Game”<br>and catch the falling hearts! 💞</div></div>
+      <div class="actions"><button class="btn btn-primary" id="startGame">Start Game 🎮</button><button class="btn btn-soft" id="resetGame">Restart ↻</button></div>
+      <p id="gameResult" class="game-note" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🎀 Three Little Surprises</h2>
+    <div class="card">
+      <p>Tap each gift to reveal a tiny birthday wish.</p>
+      <div class="actions">
+        <button class="btn btn-soft gift" data-message="🌟 ඔයාගේ හැම හීනයකටම ලස්සන පාරක් විවර වේවා! May your dreams find their way to you.">🎁 Gift 1</button>
+        <button class="btn btn-soft gift" data-message="🧸 දවස පුරා හිනාවෙන් ඉන්න. Sending you a pocketful of happiness!">🎁 Gift 2</button>
+        <button class="btn btn-soft gift" data-message="💖 ඔයාට ලැබෙන්න ඕනේ හොඳම දේවල්ම ලැබේවා. You deserve a year full of wonderful surprises!">🎁 Gift 3</button>
+      </div>
+      <p id="giftMessage" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="section" id="finalSection">
+    <h2>🌹 One Last Thing…</h2>
+    <div class="card">
+      <div class="final-heart">💖</div>
+      <p><strong>හචින්ත නුරාග, අද දවස ඔයාට අමතක නොවන ලස්සන මතකයක් වේවා!</strong></p>
+      <p>Hachintha Nuraga, wishing you a birthday as lovely, bright, and magical as you are. 🎂✨</p>
+      <div class="actions">
+        <button class="btn btn-primary" id="finalReveal">Reveal the Final Surprise 💌</button>
+        <button class="btn btn-gold" id="celebrate">Celebrate Again 🎉</button>
+        <button class="btn btn-soft" id="shareBtn">Share this wish 🔗</button>
+      </div>
+      <div class="secret hidden" id="finalMessage"><h3>💗 You are a gift to this world 💗</h3><p>ඔයාගේ අලුත් අවුරුද්ද සතුටින්, ආදරයෙන් සහ අලුත් අවස්ථාවලින් පිරේවා!</p><p><em>Keep your heart kind and your sparkle bright. Happy Birthday, Hachintha Nuraga! 🧸🌷</em></p></div>
+    </div>
+  </section>
+  <footer>Made with ♡, glitter & teddy bear magic<br><button class="btn btn-soft" id="replayAll" style="margin-top:12px">Replay the surprise ↻</button></footer>
+</main>
+<div id="toast" class="hidden" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let toastTimer, gameTimer, spawnTimer, score=0, time=20, playing=false, audioCtx=null, musicTimer=null, musicOn=false;
+  function toast(msg){const el=$('toast');el.textContent=msg;el.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.add('hidden'),2400)}
+  function confetti(n=100){
+    if(reduced)return;
+    const colors=['#ff72ad','#ffc5df','#fff7fc','#e8bd67','#d84f8b','#f69dc6'];
+    for(let i=0;i<n;i++){const p=document.createElement('i');p.className='confetti';p.style.left=Math.random()*100+'vw';p.style.background=colors[Math.floor(Math.random()*colors.length)];p.style.setProperty('--drift',(Math.random()*220-110)+'px');p.style.animationDuration=(2.2+Math.random()*2.1)+'s';p.style.animationDelay=(Math.random()*.55)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),5200)}
+  }
+  function floatSpark(){
+    if(reduced)return;
+    const layer=$('sparkleLayer');const s=document.createElement('span');s.className='spark';s.textContent=['♡','✦','✨','💗','⋆'][Math.floor(Math.random()*5)];s.style.left=Math.random()*100+'%';s.style.bottom='-30px';s.style.fontSize=(12+Math.random()*19)+'px';s.style.color=['#e65b9a','#d8a648','#ff9dc6'][Math.floor(Math.random()*3)];s.style.animationDuration=(7+Math.random()*7)+'s';layer.appendChild(s);setTimeout(()=>s.remove(),15000)
+  }
+  if(!reduced)setInterval(floatSpark,700);
+  function openSurprise(){ $('wishSection').classList.remove('hidden');$('typedWish').textContent='';const text='හචින්ත නුරාග, සුබම සුබ උපන්දිනයක් වේවා! 🎂💗';let i=0;const tick=()=>{if(i<text.length){$('typedWish').textContent+=text.charAt(i++);setTimeout(tick,85)}};tick();confetti(150);$('wishSection').scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});}
+  $('openSurprise').addEventListener('click',openSurprise);
+  $('letterBtn').addEventListener('click',()=>{$('extraMessage').classList.toggle('hidden');confetti(35)});
+  document.querySelectorAll('.gift').forEach(b=>b.addEventListener('click',()=>{$('giftMessage').textContent=b.dataset.message;confetti(24)}));
+  $('finalReveal').addEventListener('click',()=>{$('finalMessage').classList.toggle('hidden');confetti(120);if(!$('finalMessage').classList.contains('hidden'))$('finalMessage').scrollIntoView({behavior:reduced?'auto':'smooth',block:'nearest'})});
+  $('celebrate').addEventListener('click',()=>{confetti(160);toast('🎉 Sending you extra birthday sparkle! 💗')});
+  $('replayAll').addEventListener('click',()=>{openSurprise();$('extraMessage').classList.add('hidden');$('finalMessage').classList.add('hidden');$('giftMessage').textContent='';$('gameResult').textContent='';toast('Surprise replayed! 🎁')});
+
+  // A tiny original synthesized melody avoids third-party audio files.
+  const melody=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5];
+  function stopMusic(){if(musicTimer)clearInterval(musicTimer);musicTimer=null;if(audioCtx){audioCtx.close().catch(()=>{});audioCtx=null}musicOn=false;$('musicBtn').textContent='♫ Play Birthday Music';$('musicBtn').setAttribute('aria-pressed','false')}
+  async function startMusic(){
+    try{
+      const AC=window.AudioContext||window.webkitAudioContext;if(!AC){toast('Audio is not supported in this browser.');return}
+      audioCtx=new AC();await audioCtx.resume();let i=0;
+      const playNote=()=>{if(!audioCtx)return;const now=audioCtx.currentTime;const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=melody[i%melody.length];gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.075,now+.025);gain.gain.exponentialRampToValueAtTime(.0001,now+.42);osc.connect(gain);gain.connect(audioCtx.destination);osc.start(now);osc.stop(now+.45);i++};
+      playNote();musicTimer=setInterval(playNote,480);musicOn=true;$('musicBtn').textContent='♫ Turn Music Off';$('musicBtn').setAttribute('aria-pressed','true');toast('♫ Birthday melody is playing 💗');
+    }catch(e){stopMusic();toast('Could not start audio. Please try again.')}
+  }
+  $('musicBtn').addEventListener('click',()=>musicOn?stopMusic():startMusic());
+
+  function clearGameTimers(){clearInterval(gameTimer);clearInterval(spawnTimer);gameTimer=spawnTimer=null}
+  function endGame(){playing=false;clearGameTimers();$('gameArea').querySelectorAll('.game-heart').forEach(x=>x.remove());$('gameHint').classList.remove('hidden');$('gameHint').innerHTML=score>=10?'🎉 Amazing! You caught enough hearts! 💖':'💗 Time is up! Try once more!';$('gameResult').textContent=score>=10?'You did it! Your birthday surprise level: SUPERSTAR 🌟':'You scored '+score+' points. One more round? 🧸';if(score>=10)confetti(110);$('startGame').textContent='Play Again 🎮'}
+  function startGame(){
+    clearGameTimers();playing=true;score=0;time=20;$('score').textContent=score;$('time').textContent=time;$('gameResult').textContent='';$('gameHint').classList.add('hidden');$('gameArea').querySelectorAll('.game-heart').forEach(x=>x.remove());$('startGame').textContent='Game Running…';$('startGame').disabled=true;
+    spawnTimer=setInterval(()=>{
+      if(!playing)return;const area=$('gameArea');const h=document.createElement('button');h.className='game-heart';h.type='button';h.textContent=['💗','💖','💕','💘','💝'][Math.floor(Math.random()*5)];h.setAttribute('aria-label','Catch heart');const max=Math.max(0,area.clientWidth-45);h.style.left=Math.random()*max+'px';h.style.top='-42px';h.style.animationDuration=(1.8+Math.random()*1.3)+'s';
+      h.addEventListener('click',()=>{if(!playing)return;score++;$('score').textContent=score;h.remove();if(score>=10){$('time').textContent=time;playing=false;endGame();$('gameHint').innerHTML='🌟 Birthday superstar! 🌟';}});
+      h.addEventListener('animationend',()=>h.remove());area.appendChild(h);setTimeout(()=>h.remove(),3400);
+    },430);
+    gameTimer=setInterval(()=>{if(!playing)return;time--; $('time').textContent=time;if(time<=0)endGame()},1000);
+  }
+  $('startGame').addEventListener('click',startGame);
+  $('resetGame').addEventListener('click',()=>{clearGameTimers();playing=false;score=0;time=20;$('score').textContent='0';$('time').textContent='20';$('gameArea').querySelectorAll('.game-heart').forEach(x=>x.remove());$('gameHint').classList.remove('hidden');$('gameHint').textContent='Tap “Start Game” and catch the falling hearts! 💞';$('gameResult').textContent='';$('startGame').disabled=false;$('startGame').textContent='Start Game 🎮'});
+  // Ensure the start control is restored after a round ends.
+  const originalEndGame=endGame;
+  // endGame is invoked through timer and target completion; restore the button state after it runs.
+  const observer=new MutationObserver(()=>{if(!playing)$('startGame').disabled=false});
+  observer.observe($('gameResult'),{childList:true,subtree:true,characterData:true});
+
+  $('shareBtn').addEventListener('click',async()=>{
+    const data={title:document.title,text:'A little birthday surprise made with love 💗'};
+    try{if(navigator.share){await navigator.share(data)}else if(navigator.clipboard&&location.protocol!=='file:'){await navigator.clipboard.writeText(location.href);toast('Page link copied! Host this file online to share it with others.')}else{toast('To share this website, host index.html online and copy its public link.')}}
+    catch(e){if(e.name!=='AbortError')toast('To share publicly, host index.html online first.')}
+  });
+})();
+</script>
+</body>
+</html>
